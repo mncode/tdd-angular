@@ -1,0 +1,25 @@
+<head>
+	<script src="bower_components/angular/angular.js"></script>
+	
+	<title>"Macha SPec Runner"</title>
+	<link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body ng-app="AddressBook">
+	
+	<div id="mocha">
+		<script src="bower_components/mocha/mocha.js"></script>
+		<script src="bower_components/chai/chai.js"></script>
+		<script type="text/javascript">
+			mocha.setup('bdd');
+		</script>
+	</div>
+
+	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+	
+	<script src="main.js"></script>
+	<script src="main.spec.js"></script>
+	<script>
+		mocha.run();
+	</script>
+	
+</body>
